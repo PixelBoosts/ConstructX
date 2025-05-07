@@ -6,6 +6,26 @@
     <title>ConstructX - Construim Viitorul</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
+  <script>
+  const buttons = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".project-card");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const filter = btn.getAttribute("data-filter");
+
+      cards.forEach(card => {
+        if (filter === "all" || card.classList.contains(filter)) {
+          card.classList.remove("hidden");
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+    });
+  });
+</script>
+
   <body class="bg-[#1A1A2E] text-white font-sans">
 
     <!-- Navbar -->
