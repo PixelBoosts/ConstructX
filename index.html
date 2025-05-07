@@ -137,3 +137,48 @@
   </body>
 </html>
 
+<section class="py-20 bg-[#121212] text-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-[#FF6F00] mb-10 text-center">Proiecte finalizate</h2>
+
+    <!-- Filtru -->
+    <div class="flex justify-center gap-4 mb-10">
+      <button class="filter-btn bg-[#FF6F00] px-4 py-2 rounded hover:bg-orange-600" data-filter="all">Toate</button>
+      <button class="filter-btn bg-gray-800 px-4 py-2 rounded hover:bg-gray-700" data-filter="case">Case</button>
+      <button class="filter-btn bg-gray-800 px-4 py-2 rounded hover:bg-gray-700" data-filter="hale">Hale</button>
+      <button class="filter-btn bg-gray-800 px-4 py-2 rounded hover:bg-gray-700" data-filter="blocuri">Blocuri</button>
+    </div>
+
+    <!-- Proiecte -->
+    <div class="grid md:grid-cols-3 gap-8" id="proiecte">
+
+      <!-- Card 1 -->
+      <div class="project-card case bg-[#1e1e1e] rounded-xl shadow-md overflow-hidden transition hover:scale-105">
+        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914" alt="Casa" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-[#FF6F00]">Casă modernă, Brașov</h3>
+          <p class="text-sm text-gray-300 mt-2">Proiect la cheie, finalizat în 2024. Suprafață: 180mp.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="project-card hale bg-[#1e1e1e] rounded-xl shadow-md overflow-hidden transition hover:scale-105">
+        <img src="https://images.unsplash.com/photo-1560185127-6ed189bf0266" alt="Hală" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-[#FF6F00]">Hală industrială, Cluj</h3>
+          <p class="text-sm text-gray-300 mt-2">Construcție metalică de 2000mp, livrată în 5 luni.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="project-card blocuri bg-[#1e1e1e] rounded-xl shadow-md overflow-hidden transition hover:scale-105">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Bloc" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-[#FF6F00]">Bloc 4 etaje, Craiova</h3>
+          <p class="text-sm text-gray-300 mt-2">Locuințe colective, peste 24 apartamente, finalizat 2023.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
